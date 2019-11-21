@@ -22,13 +22,29 @@
       <form class="form-group" id="survey-form" >
         <label id="name-label"  for="name">Yours name:</label>
         <input required type="text" class="form-control" id="name" placeholder="Give yours name">
+
         <label id="email-label" for="email">Yours email:</label>
         <input required type="email" class="form-control" id="email" placeholder="Give your email address">
-        <label for="city">Yours favourite city:</label>
-        <input type="text" class="form-control" id="city">
+
 
         <label id="number-label" for="number">Yours favourite number:</label>
         <input type="number" min="40" max="300" class="form-control" id="number" placeholder="Give your favourite number in range from 40 to 300">
+
+        <label for="dropdown">Yours favourite city:</label>
+        <select  type="text" class="form-control" id="dropdown">
+          <option value="volvo">Warsaw</option>
+          <option value="saab">Kyiv</option>
+          <option value="fiat">Paris</option>
+          <option value="audi">Tel-Aviv</option>
+        </select>
+
+        <label for="name">Yours favourite option:</label>
+        <fieldset id="name">
+          <input type="radio" value="value1" name="name">1st option</input><br/>
+          <input type="radio" value="value2" name="name">2nd option</input><br/>
+          <input type="radio" value="value3" name="name">3rd option</input>
+        </fieldset>
+
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 
